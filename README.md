@@ -35,15 +35,15 @@ playwright install
 
 ## Estrutura do Projeto
 A estrutura do projeto é a seguinte:
-seu_projeto/
-├── pojos/
-│   ├── __init__.py
-│   └── user.py
-├── tests/
-│   ├── __init__.py
-│   └── test_create_user.py
-└── utils/ (se necessário)
-    └── __init__.py
+- seu_projeto/
+  - pojos/
+    - __init__.py
+    - user.py
+  - tests/
+    - __init__.py
+    - test_create_user.py
+  - utils/ (se necessário)
+    - __init__.py
 
 
 ## Uso
