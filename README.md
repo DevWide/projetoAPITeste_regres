@@ -35,7 +35,7 @@ playwright install
 
 ## Estrutura do Projeto
 A estrutura do projeto é a seguinte:
-- seu_projeto/
+- projeto_zappts/
   - pojos/
     - __init__.py
     - user.py
