@@ -33,21 +33,26 @@ pip install playwright pytest pytest-html
 playwright install
 ````
 
+
 ## Estrutura do Projeto
 A estrutura do projeto é a seguinte:
 - projeto_zappts/
-  - pojos/
-    - __init__.py
-    - user.py
-  - tests/
-    - __init__.py
-    - test_create_user.py
-  - utils/ (se necessário)
-    - __init__.py
-
+- pojos/
+ - __init__.py
+ - user.py
+- tests/
+ - __init__.py
+ - test_user_creation.py
+ - test_user_details.py
+ - test_user_update.py
+ - test_user_delete.py
+ - test_user_listing.py
+ - test_user_authentication.py
+- utils/ (se necessário)
+ - __init__.py
 
 ## Uso
-Para executar os testes, utilize o seguinte comando:
+Para executar todos os testes, utilize o seguinte comando:
 ````
 pytest tests
 ````
@@ -58,7 +63,7 @@ pytest tests --html=report.html
 ````
 
 ## Execução dos Testes
-Os testes são escritos usando a biblioteca Playwright e podem ser executados com o Pytest. Os testes verificam várias funcionalidades da API, incluindo a criação de usuários e a validação de respostas.
+Os testes são escritos usando a biblioteca Playwright e podem ser executados com o Pytest. Os testes verificam várias funcionalidades da API, incluindo a criação, atualização, exclusão e listagem de usuários, bem como testes de autenticação.
 
 ## Geração de Relatórios
 O plugin `pytest-html` é utilizado para gerar relatórios detalhados em HTML. Estes relatórios incluem informações sobre os testes executados, seus resultados e quaisquer falhas encontradas.
