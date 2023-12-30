@@ -34,6 +34,7 @@ playwright install
 ````
 
 
+
 ## Estrutura do Projeto
 A estrutura do projeto é a seguinte:
 - projeto_zappts/
@@ -62,11 +63,17 @@ Para gerar um relatório em HTML dos testes:
 pytest tests --html=report.html
 ````
 
+Para gerar um relatório em HTML dos testes com logs detalhados, execute:
+````
+pytest tests --html=report.html --log-cli-level=INFO
+````
+**OBS:**Este comando irá gerar um relatório HTML dos resultados dos testes  e incluirá logs detalhados no nível de informação, facilitando o diagnóstico de eventuais falhas no testes.
+
 ## Execução dos Testes
 Os testes são escritos usando a biblioteca Playwright e podem ser executados com o Pytest. Os testes verificam várias funcionalidades da API, incluindo a criação, atualização, exclusão e listagem de usuários, bem como testes de autenticação.
 
 ## Geração de Relatórios
-O plugin `pytest-html` é utilizado para gerar relatórios detalhados em HTML. Estes relatórios incluem informações sobre os testes executados, seus resultados e quaisquer falhas encontradas.
+O plugin `pytest-html` é utilizado para gerar relatórios detalhados em HTML. Estes relatórios incluem informações sobre os testes executados, seus resultados, quaisquer falhas encontradas e logs capturados durante a execução dos testes.
 
 
 
